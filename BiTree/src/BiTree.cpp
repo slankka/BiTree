@@ -27,7 +27,8 @@ bool searchBiNode(BiTree T,data key,BiTree parent,BiTree &result){
 	/*
 	 * param result:last no-null Node,null means Empty Tree
 	 * param parent:init value NULL,null means Empty Tree
-	 *
+	 * param result must be a reference type with & otherwise 
+	 * it can't save the traverse message
 	 */
 if(!T){
 	result=parent;
